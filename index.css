@@ -1,0 +1,335 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.preload {
+    -webkit-transition: none !important;
+    -moz-transition: none !important;
+    -ms-transition: none !important;
+    -o-transition: none !important;
+    transition: none !important;
+  }
+
+h1 {
+    font-family: forma-djr-banner, sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    cursor: default;
+}
+
+
+h2 {
+    font-family: forma-djr-micro,sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    cursor: default;
+}
+
+p {
+    font-family: droid-sans-mono, monospace;
+    font-weight: 400;
+    font-style: normal;
+    cursor: default;
+}
+
+.rct-grid-row {
+    overflow: hidden;
+}
+
+.yellow {
+    color: #DCF764;
+}
+
+.red {
+    color: #FF3864;
+}
+
+.black {
+    color: #131515;
+}
+
+.darkGrey {
+    color: #393D3F;
+}
+
+.lightGrey {
+    color: #7E878B;
+}
+
+.green {
+    color: #88958D;
+}
+
+.whiteBackground {
+    position: fixed;
+    left: 55vw;
+    top: 0px;
+    width: 1000px;
+    height: 150vh;
+    background-color: #ffffff;
+    transform: skew(-14deg);
+}
+
+.mainContainer {
+    min-height: 100vh;
+    display: flex;
+    padding: 75px;
+    flex-direction: row;
+    background-color: #131515;
+}
+
+.comingSoon {
+    position: relative;
+    width: 65%;
+}
+
+.checkThese {
+    position: relative;
+    width: 50%;
+
+    display: flex;
+    flex-direction: column;
+
+    align-items: flex-end;
+    justify-content: center;
+}
+
+.rfl {
+    font-size: 140px;
+    max-width: 900px;
+    line-height: 1;
+    overflow: hidden;
+}
+
+.loadingText {
+    margin-top: 30px;
+    font-size: 22px;
+}
+
+.strike {
+    text-decoration: line-through;
+}
+
+.blink {
+    animation: blinkText 1.5s infinite;
+}
+
+@keyframes blinkText {
+	0% { opacity: 1; }
+	50% { opacity: 1; }
+	50.01% { opacity: 0; }
+	100% { opacity: 0; }
+}
+
+.socialContainer {
+    position: absolute;
+    bottom: 0px;
+
+    display: flex;
+    flex-direction: row;
+}
+
+.socialLink:focus {
+    outline: none;
+}
+
+.socialIcon {
+    fill: #DCF764;
+    width: 40px;
+    margin-right: 20px;
+    transition: 0.2s ease-in-out;
+}
+
+.socialIcon:hover {
+    transform: scale(1.2);
+}
+
+#lastSocialIcon {
+    margin-right: 0px;
+}
+
+.checkPair {
+    margin-bottom: 60px;
+    text-align: right;
+}
+
+.checkPair:focus {
+    outline: none;
+}
+
+#lastCheckPair {
+    margin-bottom: 0px;
+}
+
+.checkLink {
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.underline {
+    text-decoration: underline;
+    transition: 0.2s ease-in-out;
+}
+
+.checkHeader {
+    color: #131515;
+    font-size: 90px;
+}
+
+.checkHeaderLink {
+    cursor: default;
+    text-decoration: none;
+}
+
+.checkPair:hover .underline {
+    color: #FF3864;
+}
+
+@media only screen and (min-width: 1200px) and (max-width: 1400px) {
+    
+    .checkHeader {
+        font-size: 80px;
+    }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1200px) {
+    .rfl {
+        font-size: 115px;
+    }
+
+    .loadingText {
+        font-size: 18px;
+    }
+
+    .whiteBackground {
+        left: 50vw;
+    }
+
+    .checkLink {
+        font-size: 18px;
+    }
+    
+    .checkHeader {
+        font-size: 69px;
+    }
+}
+
+
+@media only screen and (max-width: 992px) {
+    * {
+        overflow-x: hidden;
+        overflow-y: visible;
+        background-color: #131515;
+    }
+
+    .mainContainer {
+        display: block;
+        /* flex-direction: column; */
+    }
+
+    .comingSoon {
+        width: 100%;
+    }
+
+    .checkThese {
+        width: 100%;
+    }
+
+    .socialContainer {
+        position: fixed;
+        width: 100vw;
+        padding: 10px;
+        bottom: 0px;
+        left: 0px; 
+        background-color: transparent;
+        justify-content: center;
+        z-index: 9999;
+    }
+
+    .socialLink {
+        background-color: transparent;
+    }
+
+    .socialIcon {
+        background-color: transparent;
+        width: 50px;
+    }
+
+    .whiteBackground {
+        display: none;
+    }
+
+    .checkThese {
+        margin-top: 100px;
+        margin-bottom: 100px;
+    }
+
+    .checkLink {
+        text-decoration: none;
+        font-size: 20px;
+    }
+    
+    .checkHeader {
+        color: #FFFFFF;
+        font-size: 100px;
+    }
+
+    .checkPair:hover .underline {
+        color: #DCF764;
+    }
+    
+}
+
+
+@media only screen and (max-width: 768px) {
+    .rfl {
+        font-size: 110px;
+    }
+
+    .loadingText {
+        font-size: 16px;
+    }
+
+    .checkLink {
+        font-size: 18px;
+    }
+    
+    .checkHeader {
+        font-size: 85px;;
+    }
+}
+
+@media only screen and (max-width: 610px) {
+    .rfl {
+        font-size: 80px;
+    }
+
+    .checkLink {
+        font-size: 16px;
+    }
+    
+    .checkHeader {
+        font-size: 65px;;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .rfl {
+        font-size: 70px;
+    }
+
+    .loadingText {
+        font-size: 14px;
+    }
+
+    .checkLink {
+        font-size: 14px;
+    }
+    
+    .checkHeader {
+        font-size: 55px;;
+    }
+}
