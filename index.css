@@ -453,6 +453,10 @@ p {
         transition: 0.1s ease-in-out;
     }
 
+    .visit {
+        display: none;
+    }
+
 
     .leftCol {
         width: 100%;
