@@ -414,7 +414,7 @@ p {
     }
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 980) {
 
     .f1 {
         font-size: calc(100% + 10vw);
