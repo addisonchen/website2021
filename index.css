@@ -266,7 +266,7 @@ p {
 .linkButton {
     position: relative;
     display: inline-block;
-    padding: 5px 20px 6px 20px;
+    padding: 5px 25px 6px 25px;
     border: 1px solid #FF3864;
     background-color: #ffffff;
     text-decoration: none;
@@ -289,7 +289,7 @@ p {
 }
 
 .linkButtonText {
-    font-size: 15px;
+    font-size: calc(50% + 0.8vw);
     color: #FF3864;
     cursor: pointer;
     transition: 0.1s ease-in-out;
@@ -417,8 +417,47 @@ p {
 @media screen and (max-width: 980px) {
 
     .f1 {
-        font-size: calc(100% + 10vw);
+        font-size: calc(100% + 12vw);
     }
+    
+    .f2 {
+        font-size: calc(50% + 3vw);
+    }
+    
+    .f3 {
+        font-size: calc(50% + 6vw);
+        color: #131515;
+    }
+    
+    .f4 {
+        font-size: calc(50% + 1.5vw);
+        color: #7D8491;
+    }
+    
+    .f5 {
+        font-size: calc(50% + 3vw);
+        color: #131515;
+    }
+    
+    .f6 {
+        font-size: calc(50% + 1.3vw);
+        color: #7D8491;
+        cursor: inherit;
+    }
+
+
+.linkButton {
+    padding: 10px 40px 12px 40px;
+    margin: 40px 40px 0 0;
+}
+
+.linkButtonText {
+    font-size: 30px;
+    color: #FF3864;
+    cursor: pointer;
+    transition: 0.1s ease-in-out;
+}
+
 
     .leftCol {
         width: 100%;
@@ -441,9 +480,13 @@ p {
         padding: 0 20px 20px 20px;
         flex-direction: column;
         align-items: center;
-        justify-content: space-evenly;
+        justify-content: center;
         width: 100%;
         height: 100vh;
+    }
+
+    #nameContainer {
+        margin-bottom: 10vh;
     }
 
     .homeBottom {
