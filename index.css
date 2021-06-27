@@ -404,7 +404,7 @@ p {
 
 }
 
-@media screen and (min-width: 768px) and (max-width: 1410px) {
+@media screen and (min-width: 981px) and (max-width: 1410px) {
     .leftCol {
         width: 60%;
     }
@@ -414,7 +414,7 @@ p {
     }
 }
 
-@media only screen and (max-width: 980) {
+@media screen and (max-width: 980px) {
 
     .f1 {
         font-size: calc(100% + 10vw);
@@ -457,11 +457,11 @@ p {
     }
 
     #profilepicbg {
-        transform: translate(8px, calc(3px - 60vw));
+        transform: translate(8px, calc(3px - min(60vw, 450px)));
     }
 
     .profilepiccontainer:hover #profilepicbg{
-        transform: translate(5px, calc(1px - 60vw));
+        transform: translate(5px, calc(1px - min(60vw, 450px)));
     }
 
     .info {
