@@ -419,44 +419,39 @@ p {
     .f1 {
         font-size: calc(100% + 12vw);
     }
-    
+
     .f2 {
-        font-size: calc(50% + 3vw);
+        font-size: calc(50% + 4vw);
     }
-    
+
     .f3 {
         font-size: calc(50% + 6vw);
-        color: #131515;
     }
-    
+
     .f4 {
-        font-size: calc(50% + 1.5vw);
-        color: #7D8491;
+        font-size: calc(50% + 2vw);
     }
-    
+
     .f5 {
-        font-size: calc(50% + 3vw);
-        color: #131515;
+        font-size: calc(50% + 4vw);
     }
-    
+
     .f6 {
-        font-size: calc(50% + 1.3vw);
-        color: #7D8491;
-        cursor: inherit;
+        font-size: calc(50% + 2vw);
     }
 
 
-.linkButton {
-    padding: 10px 40px 12px 40px;
-    margin: 40px 40px 0 0;
-}
+    .linkButton {
+        padding: 10px 40px 12px 40px;
+        margin: 40px 40px 0 0;
+    }
 
-.linkButtonText {
-    font-size: 30px;
-    color: #FF3864;
-    cursor: pointer;
-    transition: 0.1s ease-in-out;
-}
+    .linkButtonText {
+        font-size: 30px;
+        color: #FF3864;
+        cursor: pointer;
+        transition: 0.1s ease-in-out;
+    }
 
 
     .leftCol {
