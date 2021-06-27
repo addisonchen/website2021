@@ -2,7 +2,19 @@
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
-    overflow: hidden;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+a {
+    text-decoration: none;
+    color: #131515;
 }
 
 .preload {
@@ -38,10 +50,37 @@ p {
 
 .f1 {
     font-size: calc(100% + 6vw);
+    color: #131515;
 }
 
 .f2 {
-    font-size: calc(50% + 3vw);
+    font-size: calc(50% + 1.2vw);
+    color: #7D8491;
+}
+
+.f3 {
+    font-size: calc(50% + 4vw);
+    color: #131515;
+}
+
+.f4 {
+    font-size: calc(50% + 0.8vw);
+    color: #7D8491;
+}
+
+.f5 {
+    font-size: calc(50% + 2vw);
+    color: #131515;
+}
+
+.f6 {
+    font-size: calc(50% + 0.7vw);
+    color: #7D8491;
+    cursor: inherit;
+}
+
+.f6.black {
+    color: #131515;
 }
 
 .ov {
@@ -49,11 +88,11 @@ p {
 }
 
 .leftCol {
-    width: 60%;
+    width: 65%;
 }
 
 .rightCol {
-    width: 40%;
+    width: 35%;
 }
 
 .mainContainer {
@@ -62,12 +101,22 @@ p {
     padding: 0 10vw 0 10vw;
     margin: auto;
     min-height: 100vh;
-    max-width: 1400px;
+    max-width: 1800px;
 }
 
 .home {
-    margin-top: 10vh;
-    padding: 50px 5vw 200px 5vw;
+    min-height: 100vh;
+    padding: 50px 5vw 50px 5vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    overflow: visible;
+    width: 100%;
+}
+
+.homeTop {
+    margin-top: 15vh;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -75,6 +124,55 @@ p {
     overflow: visible;
     width: 100%;
 }
+
+
+.homeBottom {
+    height: 15vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    overflow: visible;
+    opacity: 1;
+    transform: translateY(0px);
+    transition: 0.5s ease-in-out;
+}
+
+#rezLink {
+    color: #FF3864;
+    text-decoration: underline;
+    text-decoration-color: #FF3864;
+}
+
+#introText {
+    text-align: center;
+    max-width: 50vw;
+}
+
+.downArrow {
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    opacity: 0.3;
+    transition: 0.4s ease-in-out;
+}
+
+#arrow {
+    width: 40px;
+    height: 40px;
+    fill: #7D8491;
+    transition: 0.2s ease-in-out;
+}
+
+.downArrow:hover {
+    opacity: 1 !important;
+}
+
+
+.downArrow:hover #arrow {
+    fill: #FF3864;
+}
+
 
 #profilepic {
     width: 100%;
@@ -103,7 +201,7 @@ p {
 }
 
 .info {
-    padding: 0 5vw 0 5vw;
+    padding: 10vh 5vw 0 5vw;
     display: flex;
     flex-direction: row;
     align-items: flex-start;
@@ -113,9 +211,208 @@ p {
 
 .infoSection {
     width: 100%;
+    margin-bottom: 50px;
+}
+
+.mobileHR {
+    display: none;
+}
+
+.footer {
+    margin-top: 300px;
+    width: 100vw;
+    height: 300px;
+    background-color: black;
+}
+
+.projectSection {
+    position: relative;
+    margin: 15px 0 125px 0;
+    padding-right: 5vw;
+    overflow: visible;
+}
+
+.projectTitle {
+    display: inline-block;
+    margin-bottom: 10px;
+}
+
+.projectTitleUnderlineContainer {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    padding-right: 5vw;
+}
+
+.projectTitleUnderline {
+    position: relative;
+    z-index: -2;
+    text-decoration: underline;
+    text-decoration-color: #FF3864;
+    opacity: 0%;
+    transition: 0.2s ease-in-out;
+
+}
+
+.projectSection:hover .projectTitleUnderline {
+    opacity: 100%;
+}
+
+.projectTitleContainer {
+    position: relative;
+    display: inline-block;
+}
+
+.linkButton {
+    position: relative;
+    display: inline-block;
+    padding: 5px 20px 6px 20px;
+    border: 1px solid #FF3864;
+    background-color: #ffffff;
+    text-decoration: none;
+    text-align: center;
+    margin: 20px 20px 0 0;
+    transition: 0.2s ease-in-out;
+}
+
+.linkButton::after {
+    content: ' ';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 1px solid #FF3864;
+    transform: translate(2px, 2px);
+    transition: 0.2s ease-in-out;
+    z-index: -1;
+}
+
+.linkButtonText {
+    font-size: 15px;
+    color: #FF3864;
+    cursor: pointer;
+    transition: 0.1s ease-in-out;
+}
+
+.linkButton:hover {
+    border-color: #FF3864;
+}
+
+.linkButton:hover .linkButtonText {
+    color: #FF3864;
+}
+
+.linkButton:hover::after {
+    transform: translate(1px, 1px);
+}
+
+.linkButton:active {
+    background-color: #FF3864;
+    transition: 0s;
+}
+
+.linkButton:active .linkButtonText {
+    color: #ffffff;
+    transition: 0s;
 }
 
 
+.aboutSection {
+    position: relative;
+    margin: 15px 0 40px 0;
+    overflow: visible;
+}
+
+.aboutSectionHeader {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    justify-content: flex-start;
+}
+
+.aboutSectionInnerHeader {
+    position: relative;
+}
+
+
+.sectionTitleUnderlineContainer {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+
+.sectionTitleUnderline {
+    position: relative;
+    z-index: -2;
+    color: #ffffff;
+    text-decoration: underline;
+    text-decoration-color: #FF3864;
+    opacity: 0%;
+    transition: 0.2s ease-in-out;
+}
+
+.aboutSectionHeaderLink:hover .sectionTitleUnderline {
+    opacity: 100%;
+}
+
+.aboutSectionHeaderOuterContainer {
+    width: fit-content;
+    margin-bottom: 40px;
+}
+
+.aboutIcon {
+    min-width: calc(10px + 2vw);
+    height: calc(10px + 1.25vw);
+    fill: #FF3864;
+    margin-right: 1.5vw;
+}
+
+#houseIcon {
+    transform: translateX(-1px);
+}
+
+
+.aboutSectionText {
+    margin-left: calc(10px + 3.5vw);
+}
+
+#contactHeader {
+    margin-top: 12vh;
+}
+
+#clipboard {
+    display: inline-block;
+    fill: #7D8491;
+    transition: 0.2s ease-in-out;
+}
+
+#clipboard:hover {
+    fill: #131515;
+}
+
+#clipboard:active {
+    fill: #FF3864;
+    transition: 0s;
+}
+
+@media screen and (min-width: 1800px) {
+    .f1 {
+       font-size: 130px;
+    }
+
+}
+
+@media screen and (min-width: 768px) and (max-width: 1410px) {
+    .leftCol {
+        width: 60%;
+    }
+
+    .rightCol {
+        width: 40%;
+    }
+}
 
 @media only screen and (max-width: 768px) {
 
@@ -134,15 +431,23 @@ p {
     #name {
         text-align: center;
     }
-    
+
     .home {
+        padding: 0px;
+    }
+    
+    .homeTop {
         margin-top: 0px;
-        padding: 20px;
+        padding: 0 20px 20px 20px;
         flex-direction: column;
         align-items: center;
         justify-content: space-evenly;
         width: 100%;
         height: 100vh;
+    }
+
+    .homeBottom {
+        display: none;
     }
 
     .profilepiccontainer {
@@ -166,4 +471,35 @@ p {
         justify-content: space-evenly;
         width: 100%;
     }
+
+    .infoSection {
+        margin-bottom: 100px;
+    }
+
+    .mobileHR {
+        display: inline-block;
+        border: none;
+        color: #7D8491;
+        background-color: #7D8491;
+        width: 100%;
+        height: 2px;
+        transform: translateY(-6px);
+    }
+
+    .footer {
+        margin-top: 100px;
+    }
+
+    .projectSection {
+        padding-right: 0px;
+    }
+
+    .aboutSection {
+        margin: 25px 0 25px 0;
+    }
+
+    #contactHeader {
+        margin-top: 85px;
+    }
+    
 }

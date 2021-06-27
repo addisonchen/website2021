@@ -11,33 +11,179 @@
 	<body class="preload">
 		<div class="mainContainer">
 			<div class="home">
-				<div class="ov leftCol">
-					<h1 class="f1" id="name">ADDISON</h1>
-					<h1 class="f1" id="name">CHEN</h1>
+				<div class="homeTop">
+					<div class="ov leftCol">
+						<h1 class="f1" id="name">ADDISON</h1>
+						<h1 class="f1" id="name">CHEN</h1>
+					</div>
+					<div class="ov profilepiccontainer">
+						<img src="profilepic.jpg" id="profilepic"/>
+						<div id="profilepicbg"></div>
+					</div>
 				</div>
-				<div class="ov profilepiccontainer">
-					<img src="profilepic.jpg" id="profilepic"/>
-					<div id="profilepicbg"></div>
+				<div class="homeBottom" id="homeBottom">
+					<p class="f4" id="introText">👋🏼 Hello and welcome! Grab a copy of my <a id="rezLink" href="/public/AddisonChen_Resume_2021.pdf" target="_blank">resume</a> or check out some of my projects below!</p>
+					<a class="downArrow" href="#info" id="downArrow">
+						<svg xmlns="http://www.w3.org/2000/svg" id="arrow" class="bi bi-arrow-down-square" viewBox="0 0 16 16">
+							<path fill-rule="evenodd" d="M15 2a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V2zM0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2zm8.5 2.5a.5.5 0 0 0-1 0v5.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V4.5z"/>
+						</svg>
+					</a>
 				</div>
 			</div>
 
-			<div class="info">
+			<div class="info" id="info">
 				<div class="ov leftCol">
 					<div class="infoSection">
-						<h1 class="f2">Projects</h1>
+						<p class="f2">Projects</p>
+						<hr class="mobileHR">
+						<div class="projectSection">
+
+							<h1 class="f3 projectTitle">PearCode</h1>
+							<p class="f4">React + Phoenix. Featuring WebSockets, Presence, and the Judge0 API</p>
+							<a class="linkButton" href="https://pearcode.swoogity.com" target="_blank">
+								<p class="linkButtonText">visit</p>
+							</a>
+							<a class="linkButton" href="https://github.com/addisonchen/pearcode" target="_blank">
+								<p class="linkButtonText">GitHub</p>
+							</a>
+						</div>
+						<div class="projectSection">
+							<h1 class="f3 projectTitle">F1 Database</h1>
+							<p class="f4">Flask + MySQL with Tweepy and Chart.js</p>
+							<a class="linkButton" href="https://addison-chen.com/f1database" target="_blank">
+								<p class="linkButtonText">visit</p>
+							</a>
+							<a class="linkButton" href="https://github.com/addisonchen/f1database" target="_blank">
+								<p class="linkButtonText">GitHub</p>
+							</a>
+						</div>
+						<div class="projectSection">
+							<h1 class="f3 projectTitle">Hexagon Gate Runner</h1>
+							<p class="f4">SpriteKit on iOS</p>
+							<a class="linkButton" href="https://github.com/addisonchen/Hexagon-Game" target="_blank">
+								<p class="linkButtonText">GitHub</p>
+							</a>
+						</div>
 					</div>
 				</div>
 				<div class="ov rightCol">
 					<div class="infoSection">
-						<h1 class="f2">About</h1>
+						<p class="f2">About</p>
+						<hr class="mobileHR">
+						<div class="aboutSection">
+							<div class="aboutSectionHeaderOuterContainer">
+								<a href="/public/AddisonChen_Resume_2021.pdf" target="_blank">
+									<div class="aboutSectionHeaderLink">
+										<div class="aboutSectionHeader">
+											<svg xmlns="http://www.w3.org/2000/svg" class="aboutIcon" viewBox="2 0 16 16" preserveAspectRatio="xMinYMin meet">
+												<path d="M5.5 7a.5.5 0 0 0 0 1h5a.5.5 0 0 0 0-1h-5zM5 9.5a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5zm0 2a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 0 1h-2a.5.5 0 0 1-.5-.5z"/>
+												<path d="M9.5 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V4.5L9.5 0zm0 1v2A1.5 1.5 0 0 0 11 4.5h2V14a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h5.5z"/>
+											</svg>
+											
+											<div class="aboutSectionInnerHeader">
+												<h1 class="f5">Resume</h1>
+												<div class="sectionTitleUnderlineContainer">
+													<h1 class="f5 sectionTitleUnderline">Resume</h1>
+												</div>
+											</div>
+										</div>
+										<div class="aboutSectionText">
+											<p class="f6">Download here!</p>
+										</div>
+									</div>
+								</a>
+							</div>
+						</div>
+						<div class="aboutSection">
+							<div class="aboutSectionHeaderOuterContainer">
+									<div class="aboutSectionHeader">
+										
+										<svg xmlns="http://www.w3.org/2000/svg" class="aboutIcon" viewBox="1 0 16 16" preserveAspectRatio="xMinYMin meet">
+											<path d="M8.354 1.146a.5.5 0 0 0-.708 0l-6 6A.5.5 0 0 0 1.5 7.5v7a.5.5 0 0 0 .5.5h4.5a.5.5 0 0 0 .5-.5v-4h2v4a.5.5 0 0 0 .5.5H14a.5.5 0 0 0 .5-.5v-7a.5.5 0 0 0-.146-.354L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.354 1.146zM2.5 14V7.707l5.5-5.5 5.5 5.5V14H10v-4a.5.5 0 0 0-.5-.5h-3a.5.5 0 0 0-.5.5v4H2.5z"/>
+										</svg>
+										<div class="aboutSectionInnerHeader">
+											<h1 class="f5">Northeastern University</h1>
+										</div>
+									</div>
+									<div class="aboutSectionText">
+										<p class="f6">Graduating May 2022</p>
+										<p class="f6">B.S Computer Science</p>
+									</div>
+							</div>
+						</div>
+						<div class="aboutSection">
+							<div class="aboutSectionHeaderOuterContainer">
+								<div class="aboutSectionHeader">
+									<svg xmlns="http://www.w3.org/2000/svg" class="aboutIcon" viewBox="0 0 16 16" preserveAspectRatio="xMinYMin meet">
+										<path d="M6.5 1A1.5 1.5 0 0 0 5 2.5V3H1.5A1.5 1.5 0 0 0 0 4.5v8A1.5 1.5 0 0 0 1.5 14h13a1.5 1.5 0 0 0 1.5-1.5v-8A1.5 1.5 0 0 0 14.5 3H11v-.5A1.5 1.5 0 0 0 9.5 1h-3zm0 1h3a.5.5 0 0 1 .5.5V3H6v-.5a.5.5 0 0 1 .5-.5zm1.886 6.914L15 7.151V12.5a.5.5 0 0 1-.5.5h-13a.5.5 0 0 1-.5-.5V7.15l6.614 1.764a1.5 1.5 0 0 0 .772 0zM1.5 4h13a.5.5 0 0 1 .5.5v1.616L8.129 7.948a.5.5 0 0 1-.258 0L1 6.116V4.5a.5.5 0 0 1 .5-.5z"/>
+									</svg>
+									<div class="aboutSectionInnerHeader">
+										<h1 class="f5">Experience with</h1>
+									</div>
+								</div>
+								<div class="aboutSectionText">
+									<p class="f6 black">Apple Inc.</p>
+									<p class="f6">Software Engineering Intern</p>
+									<div style="height: 1em"></div>
+									<p class="f6 black">Bose Corporation</p>
+									<p class="f6">R&D iOS Developer Co-op</p>
+								</div>
+							</div>
+						</div>
+						<p class="f2" id="contactHeader">Contact</p>
+						<hr class="mobileHR">
+						<div class="aboutSection">
+							<div class="aboutSectionHeaderOuterContainer">
+								<div class="aboutSectionHeader">
+									<svg xmlns="http://www.w3.org/2000/svg" class="aboutIcon" viewBox="0 0 16 16" preserveAspectRatio="xMinYMin meet">
+										<path d="M4 4a3 3 0 0 0-3 3v6h6V7a3 3 0 0 0-3-3zm0-1h8a4 4 0 0 1 4 4v6a1 1 0 0 1-1 1H1a1 1 0 0 1-1-1V7a4 4 0 0 1 4-4zm2.646 1A3.99 3.99 0 0 1 8 7v6h7V7a3 3 0 0 0-3-3H6.646z"/>
+										<path d="M11.793 8.5H9v-1h5a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.354-.146l-.853-.854zM5 7c0 .552-.448 0-1 0s-1 .552-1 0a1 1 0 0 1 2 0z"/>
+									</svg>
+									<div class="aboutSectionInnerHeader">
+										<h1 class="f5">Email</h1>
+									</div>
+								</div>
+								<div class="aboutSectionText">
+									<p class="f6" id="contactSectionEmail">addisonjchen@gmail.com
+										
+										<svg id="clipboard" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 16 16" onclick="copyEmail()">
+											<path d="M4 1.5H3a2 2 0 0 0-2 2V14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V3.5a2 2 0 0 0-2-2h-1v1h1a1 1 0 0 1 1 1V14a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V3.5a1 1 0 0 1 1-1h1v-1z"/>
+											<path d="M9.5 1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-3a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5h3zm-3-1A1.5 1.5 0 0 0 5 1.5v1A1.5 1.5 0 0 0 6.5 4h3A1.5 1.5 0 0 0 11 2.5v-1A1.5 1.5 0 0 0 9.5 0h-3z"/>
+										  </svg>
+									</p>
+								</div>
+							</div>
+						</div>
 					</div>
 				</div>
 			</div>
 		</div>
+		<div class="footer"></div>
 		<script>
 			document.addEventListener('DOMContentLoaded', function() {
 				document.querySelector('body').classList.remove('preload');
 			});
+
+			document.addEventListener('scroll', function(e) {
+				if (window.scrollY < 100) {
+					document.getElementById('homeBottom').style.opacity = 1;
+					document.getElementById('homeBottom').style.transform = 'translateY(0px)';
+				} else {
+					document.getElementById('homeBottom').style.opacity = 0;
+					document.getElementById('homeBottom').style.transform = 'translateY(30px)';
+				}
+			});
+
+			function copyEmail() {
+				var copyText = document.getElementById("contactSectionEmail");
+				var textArea = document.createElement("textarea");
+				textArea.value = copyText.textContent;
+				document.body.appendChild(textArea);
+				textArea.select();
+				textArea.setSelectionRange(0, 99999);
+				document.execCommand("Copy");
+				textArea.remove();
+			}
 		</script>
 	</body>
 </html>
