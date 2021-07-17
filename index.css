@@ -95,6 +95,36 @@ p {
     width: 40%;
 }
 
+.socialMenu {
+    position: fixed;
+    top: 8vh;
+    right: 4vw;
+    width: 2.5vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.socialLink {
+    margin-bottom: 2vh;
+}
+
+.socialLink.last {
+    margin-bottom: 0;
+}
+
+.socialIcon {
+    position: relative;
+    fill: #131515;
+    width: 100%;
+    transition: 0.15s ease-in-out;
+}
+
+.socialLink:hover .socialIcon {
+    fill: #FF3864;
+}
+
 .mainContainer {
     display: flex;
     flex-direction: column;
@@ -201,7 +231,7 @@ p {
 }
 
 .info {
-    padding: 10vh 0 0 5vw;
+    padding: 0 0 0 5vw;
     display: flex;
     flex-direction: row;
     align-items: flex-start;
@@ -222,7 +252,7 @@ p {
     margin-top: 300px;
     width: 100vw;
     height: 300px;
-    background-color: black;
+    background-color: #131515;
 }
 
 .projectSection {
@@ -512,6 +542,7 @@ p {
     }
 
     .info {
+        padding: 10vh 0 0 0;
         display: flex;
         flex-direction: column;
         align-items: center;
