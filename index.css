@@ -469,12 +469,20 @@ p {
     }
 
     .f5 {
-        font-size: calc(50% + 5vw);
+        font-size: calc(50% + 4.5vw);
     }
 
     .f6 {
         font-size: calc(50% + 3vw);
         color: #5E646E;
+    }
+
+    .f6.black {
+        margin-top: 20px;
+        font-family: forma-djr-micro,sans-serif;
+        font-weight: 700;
+        font-style: normal;
+        cursor: default;
     }
 
 
@@ -582,5 +590,23 @@ p {
     #contactHeader {
         margin-top: 85px;
     }
+
+    .aboutSectionHeaderOuterContainer {
+        width: 100%;
+    }
+
+    .aboutSectionHeader {
+        width: 100%;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+    }
     
+    .aboutSectionText {
+        margin-left: 0;
+    }
+
+    .aboutIcon {
+        min-width: 0;
+        height: calc(10px + 2.75vw);
+    }
 }
