@@ -455,23 +455,26 @@ p {
     }
 
     .f2 {
-        font-size: calc(50% + 4vw);
+        font-size: calc(50% + 5vw);
+        color: #5E646E;
     }
 
     .f3 {
-        font-size: calc(50% + 6vw);
+        font-size: calc(50% + 7vw);
     }
 
     .f4 {
-        font-size: calc(50% + 2vw);
+        font-size: calc(50% + 3vw);
+        color: #5E646E;
     }
 
     .f5 {
-        font-size: calc(50% + 4vw);
+        font-size: calc(50% + 5vw);
     }
 
     .f6 {
-        font-size: calc(50% + 2vw);
+        font-size: calc(50% + 3vw);
+        color: #5E646E;
     }
 
 
