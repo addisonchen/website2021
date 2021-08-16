@@ -100,7 +100,7 @@ p {
     top: 8vh;
     right: 4vw;
     width: 2.5vw;
-    display: flex;
+    display: none;
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
